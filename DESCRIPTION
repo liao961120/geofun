@@ -1,0 +1,14 @@
+Package: geofun
+Title: Personal Package for Cartography & GIS
+Version: 0.0.0.9000
+Authors@R: person("Yongfu", "Liao", email = "liao961120@gmail.com", role = c("aut", "cre", "cph"))
+URL: https://liao961120.github.io/geofun, https://github.com/liao961120/geofun
+BugReports: https://github.com/liao961120/geofun/issues
+Description: Yongfu's package for Cartography & GIS.
+Depends: R (>= 3.5.0)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Imports: 
+    rlang

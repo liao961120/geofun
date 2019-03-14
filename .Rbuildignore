@@ -1,0 +1,6 @@
+^pkgdown$
+^docs$
+^_pkgdown\.yml$
+^LICENSE\.md$
+^geofun\.Rproj$
+^\.Rproj\.user$
