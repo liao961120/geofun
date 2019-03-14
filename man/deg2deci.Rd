@@ -4,7 +4,19 @@
 \alias{deg2deci}
 \title{Degree-Minute-Second to Decimal}
 \usage{
-deg2deci(degree = 0, min = 0, sec = 0)
+deg2deci(degree = 0, minute = 0, second = 0)
+}
+\arguments{
+\item{degree}{numeric.}
+
+\item{minute}{numeric. Must be between \code{0} and
+\code{60}.}
+
+\item{second}{numeric. Must be between \code{0} and
+\code{60}.}
+}
+\value{
+A single value that contains decimal.
 }
 \description{
 Degree-Minute-Second to Decimal

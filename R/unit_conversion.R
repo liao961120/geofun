@@ -1,10 +1,19 @@
 #' Degree-Minute-Second to Decimal
-deg2deci <- function(degree = 0, min = 0, sec = 0) {
+#'
+#' @param degree numeric.
+#' @param minute numeric. Must be between \code{0} and
+#'   \code{60}.
+#' @param second numeric. Must be between \code{0} and
+#'   \code{60}.
+#'
+#' @return A single value that contains decimal.
+#' @export
+deg2deci <- function(degree = 0, minute = 0, second = 0) {
   stopifnot(degree >= 0)
-  stopifnot(min >= 0 && min <= 60)
-  stopifnot(sec >= 0 && sec <= 60)
+  stopifnot(minute >= 0 && minute <= 60)
+  stopifnot(second >= 0 && second <= 60)
 
-  degree + min/60 + sec/3600
+  degree + minute/60 + second/3600
 }
 
 #' Decimal to Degree-Minute-Second
@@ -13,6 +22,7 @@ deg2deci <- function(degree = 0, min = 0, sec = 0) {
 #'   to be converted to degree-minute-second.
 #'
 #' @return A list of numeric vectors with length 3.
+#' @export
 deci2deg <- function(x) {
   stopifnot(is.numeric(x))
 
@@ -42,6 +52,7 @@ deci2deg_atom <- function(x = 121.53) {
 #'   to be converted to degree.
 #'
 #' @return A numeric vector of length equal to the input.
+#' @export
 rad2deg <- function(rad = pi) return(rad * 180/pi)
 
 #' Degree to r.a.d
@@ -50,4 +61,5 @@ rad2deg <- function(rad = pi) return(rad * 180/pi)
 #'   to be converted to r.a.d.
 #'
 #' @return A numeric vector of length equal to the input.
+#' @export
 deg2rad <- function(degree = 180) return(degree * pi/180)
