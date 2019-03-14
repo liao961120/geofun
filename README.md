@@ -2,7 +2,7 @@
 
 # geofun
 
-This is a personal package created to facilitate my learning in Cartography and GIS. 
+This is a personal package created to facilitate my learning of Cartography and GIS. 
 
 I think it's a cool idea to create a package while taking a course, since you can write & document functions at the same time, and can even use package vignettes as a method to take notes.
 
