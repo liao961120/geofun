@@ -1,0 +1,30 @@
+# R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
+
+language: r
+dist: xenial
+latex: false
+pandoc_version: 2.3.1
+sudo: false
+
+cache:
+  packages: yes
+
+branches:
+  only:
+    - master
+
+r_github_packages:
+  - r-lib/pkgdown
+
+before_deploy:
+  - Rscript -e 'pkgdown::build_site()'
+
+# deploy docs/ and master branch to branch 'gh-pages'
+deploy:
+  - provider: pages    # Deploy master/docs to branch gh-pages
+    skip-cleanup: true
+    github-token: $GH_TOKEN
+    keep-history: false
+    local-dir: docs    # Web output directory
+    on:
+      branch: master
