@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/liao961120/geofun.svg?branch=master)](https://travis-ci.org/liao961120/geofun)
 [![Support R Version](https://img.shields.io/badge/R-≥%203.5.0-blue.svg)](https://cran.r-project.org/) [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 # geofun
